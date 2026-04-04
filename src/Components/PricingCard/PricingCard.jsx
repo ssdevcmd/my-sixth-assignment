@@ -1,0 +1,67 @@
+import React, { useState } from 'react';
+import PricingFeature from './PricingFeature';
+import{toast} from 'react-toastify';
+
+const PricingCard = ({pricing}) => {
+    // console.log(pricing);\
+    const {name,price,description,features, tag,image} = pricing;
+
+    const [isSelected, setIsSelected] = useState(false);
+
+     const handleBuy = () => {
+    setIsSelected(true);
+    toast.success ('Added to cart');
+  };
+
+
+    return (
+        <div>
+            <div className="card bg-base-100 shadow-sm">
+  <div className="card-body">
+    
+    <span className={`badge badge-xs badge-warning ${
+    tag === "popular"
+      ? "bg-purple-400"
+      : tag === "new"
+      ? "bg-green-400"
+      : "bg-yellow-400"
+  }`}
+>{tag}</span>
+    <img src={image} alt="" className='w-[50px] h-[50px]'/>
+    <div className="flex justify-between">
+      <h2 className="text-3xl text-[#101727] font-bold">{name}</h2>
+      <span className="text-xl text-[#101727] font-semibold">${price}/mo</span>
+    </div>
+    <div className='text-sm text-[#627382]'>
+        <h4>{description}</h4>
+    </div>
+    <ul className="mt-6 flex flex-col gap-2 text-xs">
+    {
+        features.map((feature, index) =>   <li key={index}>
+        <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
+        <span className='text-md text-[#627382]'>{feature}</span>
+      </li>
+  )
+    }
+    </ul>
+    <div className="mt-6">
+      {/* <button 
+      onClick={() => setIsSelected(true)}
+      className="btn btn-primary btn-block">{isSelected === false ? 'Buy Now' : 'Added to Cart'}</button> */}
+    <button
+      onClick={handleBuy}
+      disabled = {isSelected ? true : false}
+      className={`btn btn-block ${
+        isSelected ? 'bg-green-500 text-white' : 'btn-primary'
+      }`}
+    >
+      {isSelected ? 'Added to Cart' : 'Buy Now'}
+    </button>
+    </div>
+  </div>
+</div>
+        </div>
+    );
+};
+
+export default PricingCard;

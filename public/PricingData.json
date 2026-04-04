@@ -1,0 +1,147 @@
+[
+  {
+    "id": 1,
+    "name": "AI Resume Builder",
+    "description": "Create professional resumes with AI-powered suggestions.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "image":"https://i.ibb.co.com/gb6VHg1h/ai-resume-builder.jpg",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Export to PDF"
+    ],
+    "icon": "FileText"
+  },
+  {
+    "id": 2,
+    "name": "Design Asset Pack",
+    "description": "Access thousands of premium UI assets and icons.",
+    "price": 29.99,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "image":"https://i.ibb.co.com/BVfFkkRR/design-asset-pack.png",
+    "features": [
+      "5000+ icons",
+      "Figma compatible",
+      "Commercial license"
+    ],
+    "icon": "Palette"
+  },
+  {
+    "id": 3,
+    "name": "AI Writing Tool",
+    "description": "Generate marketing copy and content instantly.",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "image":"https://i.ibb.co.com/MDVvfxHX/ai-copywriting-tool.jpg",
+    "features": [
+      "Blog generator",
+      "Ad copy templates",
+      "SEO optimization"
+    ],
+    "icon": "PenTool"
+  },
+  {
+    "id": 4,
+    "name": "Website Builder Pro",
+    "description": "Build responsive websites without coding.",
+    "price": 49.99,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "image":"https://i.ibb.co.com/JjhNsjRm/website-builder-pro.png",
+    "features": [
+      "Drag & drop builder",
+      "Custom domains",
+      "SEO tools"
+    ],
+    "icon": "Globe"
+  },
+  {
+    "id": 5,
+    "name": "Social Media Scheduler",
+    "description": "Plan and automate your social media posts.",
+    "price": 7.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "image":"https://i.ibb.co.com/8DmWGWsB/social-media-schedular.png",
+    "features": [
+      "Auto posting",
+      "Analytics dashboard",
+      "Multi-platform support"
+    ],
+    "icon": "Calendar"
+  },
+  {
+    "id": 6,
+    "name": "Stock Photo Library",
+    "description": "Unlimited access to high-quality stock images.",
+    "price": 19.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "image":"https://i.ibb.co.com/p69Hnbtk/stock-photo-library.png",
+    "features": [
+      "10,000+ images",
+      "HD downloads",
+      "No watermark"
+    ],
+    "icon": "Image"
+  },
+  {
+    "id": 7,
+    "name": "Code Snippet Manager",
+    "description": "Save and organize reusable code snippets.",
+    "price": 12.99,
+    "period": "yearly",
+    "tag": "new",
+    "tagType": "new",
+    "image":"https://i.ibb.co.com/Rkkcdf2M/code-snippet-maneger.jpg",
+    "features": [
+      "Syntax highlighting",
+      "Cloud sync",
+      "Team sharing"
+    ],
+    "icon": "Code"
+  },
+  {
+    "id": 8,
+    "name": "AI Video Maker Editor",
+    "description": "Edit videos quickly with AI-powered tools.",
+    "price": 24.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "image":"https://i.ibb.co.com/BV8fbNh2/ai-video-editor.png",
+    "features": [
+      "Auto subtitles",
+      "Scene detection",
+      "Export in 4K"
+    ],
+    "icon": "Video"
+  },
+  {
+  "id": 9,
+  "name": "AI Presentation Maker",
+  "description": "Create stunning presentations in minutes.",
+  "price": 11.99,
+  "period": "monthly",
+  "tag": "popular",
+  "tagType": "popular",
+  "image":"https://i.ibb.co.com/JjyqkdX4/ai-presentation-maker.png",
+  "features": [
+    "Auto slide generation",
+    "Custom themes",
+    "Export to PPT & PDF"
+  ],
+  "icon": "Presentation"
+}
+
+]
