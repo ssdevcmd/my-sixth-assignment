@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
-import PricingFeature from './PricingFeature';
+import { TiTick } from "react-icons/ti";
 import{toast} from 'react-toastify';
+import PricingOptions from '../PricingOptions/PricingOptions';
 
-const PricingCard = ({pricing}) => {
+const PricingCard = ({pricing, cart, setCart}) => {
     // console.log(pricing);\
+    // console.log(setCart);
     const {name,price,description,features, tag,image} = pricing;
 
     const [isSelected, setIsSelected] = useState(false);
@@ -11,6 +13,7 @@ const PricingCard = ({pricing}) => {
      const handleBuy = () => {
     setIsSelected(true);
     toast.success ('Added to cart');
+    setCart([...cart, pricing ])
   };
 
 
@@ -18,18 +21,20 @@ const PricingCard = ({pricing}) => {
         <div>
             <div className="card bg-base-100 shadow-sm">
   <div className="card-body">
-    
-    <span className={`badge badge-xs badge-warning ${
-    tag === "popular"
+
+    <span className={`badge badge-xs text-white ${
+    tag === "Popular"
       ? "bg-purple-400"
-      : tag === "new"
+      : tag === "New"
       ? "bg-green-400"
       : "bg-yellow-400"
   }`}
 >{tag}</span>
-    <img src={image} alt="" className='w-[50px] h-[50px]'/>
+    <img src={image} alt="" className='w-[40px] h-[40px]'/>
+        
+    
     <div className="flex justify-between">
-      <h2 className="text-3xl text-[#101727] font-bold">{name}</h2>
+      <h2 className="text-2xl text-[#101727] font-bold">{name}</h2>
       <span className="text-xl text-[#101727] font-semibold">${price}/mo</span>
     </div>
     <div className='text-sm text-[#627382]'>
@@ -37,7 +42,7 @@ const PricingCard = ({pricing}) => {
     </div>
     <ul className="mt-6 flex flex-col gap-2 text-xs">
     {
-        features.map((feature, index) =>   <li key={index}>
+        features.map((feature, index) =>   <li key={index} className='flex items-start gap-2'>
         <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
         <span className='text-md text-[#627382]'>{feature}</span>
       </li>
@@ -55,7 +60,14 @@ const PricingCard = ({pricing}) => {
         isSelected ? 'bg-green-500 text-white' : 'btn-primary'
       }`}
     >
-      {isSelected ? 'Added to Cart' : 'Buy Now'}
+      {isSelected ? (
+  <>
+    <TiTick size={25} />
+    Added to Cart
+  </>
+) : (
+  "Buy Now"
+)}
     </button>
     </div>
   </div>

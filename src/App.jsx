@@ -9,9 +9,9 @@ import Steps from './Components/Steps/Steps'
  import { ToastContainer } from 'react-toastify';
 import Transparent from './Components/Transparent/Transparent'
 import Footer from './Components/Footer/Footer'
+import Workflow from './Components/Workflow/Workflow'
 
-const pricingPromise = fetch('PricingData.json')
-.then(res => res.json());
+
 
 
 function App() {
@@ -24,12 +24,10 @@ function App() {
     <Banner></Banner>
     <Statistics></Statistics>
     <DigitalTools></DigitalTools>
-    <Suspense fallback={<span className="loading loading-infinity loading-lg"></span>}>
-      <PricingOptions pricingPromise={pricingPromise}></PricingOptions>
-      <Steps></Steps>
-      <Transparent></Transparent>
-      <Footer></Footer>
-    </Suspense>
+    <Steps></Steps>
+    <Transparent></Transparent>
+    <Workflow></Workflow>
+    <Footer></Footer>
     
 
     {/* react toastify */}

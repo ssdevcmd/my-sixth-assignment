@@ -1,16 +1,20 @@
-import React, {useState} from 'react';
+import React, {Suspense, useState} from 'react';
 import PricingOptions from '../PricingOptions/PricingOptions';
+import Cart from '../Cart/Cart';
 
+
+const pricingPromise = fetch('PricingData.json')
+.then(res => res.json());
 const DigitalTools = () => {
 
-  //  const pricingData = use(pricingPromise);
   const [selectedCard, setSelectedCard] = useState('products');
+  const [cart, setCart] = useState([]);
   // console.log(selectedCard);
     return (
        <div className="text-center my-20">
   
   <div className="mb-6">
-     {selectedCard === 'products' ? (
+    
     <div>
     <h1 className="font-bold text-3xl">
       Premium Digital Tools
@@ -18,10 +22,8 @@ const DigitalTools = () => {
     <p className="mt-2 text-gray-600 max-w-xl mx-auto">
       Choose from our curated collection of premium digital products designed to boost your productivity and creativity.
     </p>
-    </div> ) 
-    : (
-      <h3>Your Cart</h3>
-    )}
+    </div>  
+    
   </div>
 
   <div className="flex justify-center gap-3">
@@ -33,16 +35,15 @@ const DigitalTools = () => {
     <button 
      onClick={() => setSelectedCard('cart')} 
     className={`btn ${selectedCard === 'cart' ? ' bg-[#6107ec] text-white' : 'bg-white text-[#101727FF]'} rounded-3xl px-6`}>
-      Cart(0)
+      Cart({cart.length})
     </button>
-{/* 
-    <PricingOptions pricingCard={pricingCard}>
-  </PricingOptions> */}
-  {/* <PricingOptions 
-  pricingData={pricingData}
-  selectedCard={selectedCard}
-/> */}
+     
+
   </div>
+   {selectedCard === 'products' ? (
+    <Suspense fallback={<span className="loading loading-infinity loading-lg"></span>}> 
+      <PricingOptions pricingPromise={pricingPromise} setCart={setCart} cart={cart}></PricingOptions>
+    </Suspense>):<Cart cart={cart} setCart={setCart}></Cart>}
 
    </div> 
    

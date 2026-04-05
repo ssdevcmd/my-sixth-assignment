@@ -5,7 +5,7 @@
     "description": "Create professional resumes with AI-powered suggestions.",
     "price": 9.99,
     "period": "monthly",
-    "tag": "popular",
+    "tag": "Popular",
     "tagType": "popular",
     "image":"https://i.ibb.co.com/gb6VHg1h/ai-resume-builder.jpg",
     "features": [
@@ -21,7 +21,7 @@
     "description": "Access thousands of premium UI assets and icons.",
     "price": 29.99,
     "period": "one-time",
-    "tag": "best seller",
+    "tag": "Best seller",
     "tagType": "best seller",
     "image":"https://i.ibb.co.com/BVfFkkRR/design-asset-pack.png",
     "features": [
@@ -37,7 +37,7 @@
     "description": "Generate marketing copy and content instantly.",
     "price": 14.99,
     "period": "monthly",
-    "tag": "new",
+    "tag": "New",
     "tagType": "new",
     "image":"https://i.ibb.co.com/MDVvfxHX/ai-copywriting-tool.jpg",
     "features": [
@@ -50,10 +50,10 @@
   {
     "id": 4,
     "name": "Website Builder Pro",
-    "description": "Build responsive websites without coding.",
+    "description":"Build responsive websites without coding. Instantly with modern templates.",
     "price": 49.99,
     "period": "yearly",
-    "tag": "popular",
+    "tag": "Popular",
     "tagType": "popular",
     "image":"https://i.ibb.co.com/JjhNsjRm/website-builder-pro.png",
     "features": [
@@ -69,7 +69,7 @@
     "description": "Plan and automate your social media posts.",
     "price": 7.99,
     "period": "monthly",
-    "tag": "best seller",
+    "tag": "Best seller",
     "tagType": "best seller",
     "image":"https://i.ibb.co.com/8DmWGWsB/social-media-schedular.png",
     "features": [
@@ -85,7 +85,7 @@
     "description": "Unlimited access to high-quality stock images.",
     "price": 19.99,
     "period": "monthly",
-    "tag": "popular",
+    "tag": "Popular",
     "tagType": "popular",
     "image":"https://i.ibb.co.com/p69Hnbtk/stock-photo-library.png",
     "features": [
@@ -101,7 +101,7 @@
     "description": "Save and organize reusable code snippets.",
     "price": 12.99,
     "period": "yearly",
-    "tag": "new",
+    "tag": "New",
     "tagType": "new",
     "image":"https://i.ibb.co.com/Rkkcdf2M/code-snippet-maneger.jpg",
     "features": [
@@ -117,7 +117,7 @@
     "description": "Edit videos quickly with AI-powered tools.",
     "price": 24.99,
     "period": "monthly",
-    "tag": "best seller",
+    "tag": "Best seller",
     "tagType": "best seller",
     "image":"https://i.ibb.co.com/BV8fbNh2/ai-video-editor.png",
     "features": [
@@ -133,7 +133,7 @@
   "description": "Create stunning presentations in minutes.",
   "price": 11.99,
   "period": "monthly",
-  "tag": "popular",
+  "tag": "Popular",
   "tagType": "popular",
   "image":"https://i.ibb.co.com/JjyqkdX4/ai-presentation-maker.png",
   "features": [
