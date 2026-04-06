@@ -1,8 +1,8 @@
 # 🚀 Project Name
 - DigiTools 
 
-A little description of my project.
-- A website to know about some digital AI tools and purchase the tools you want
+## A little description of my project.
+- A website to know about some digital AI tools, it's uses and purchase the tools you want.
 
 
 ## ⚙️ Features
