@@ -6,7 +6,7 @@ const Workflow = () => {
             <div className=''>
            <div className='bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white sm:p-10 justify-center mt-10 mb-0 pt-10'>
             <h1 className='text-2xl sm:text-3xl lg:text-5xl font-bold text-center'>Ready To Transform Your Workflow</h1>
-            <p className='mt-4 text-sm sm:text-base lg:text-lg text-center max-w-2xl mx-auto'>Join thousands of professionals who are already using Digitools to work smarter.
+            <p className='mt-4 text-sm sm:text-base lg:text-sm text-center max-w-2xl mx-auto'>Join thousands of professionals who are already using Digitools to work smarter.
              <br />   
             Start your free trial today.</p>
 
