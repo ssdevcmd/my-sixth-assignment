@@ -46,7 +46,7 @@ const Footer = () => {
                 </div>
                 </div>
                 
-                    <hr className='my-5 bg-[#e5e7eb]' />
+                    <hr className='my-10 bg-[#e5e7eb]' />
                     <div className='flex justify-between text-[#fafafa]'>
                     <span>© 2026 Digitools. All rights reserved.</span>
                     <span>Privacy Policy       Terms of Service Cookies</span>
