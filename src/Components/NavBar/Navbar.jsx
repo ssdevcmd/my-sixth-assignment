@@ -11,7 +11,7 @@ const Navbar = () => {
     <h1 className="bg-gradient-to-r from-[#4f39f6] to-[#9514fa] bg-clip-text text-transparent text-2xl sm:text-3xl lg:text-4xl font-bold">DigiTools</h1>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="flex gap-6 text-[#101727] cursor-pointer text-sm lg:text-base">
+    <ul className="flex gap-6 text-[#101727] text-sm lg:text-base">
       <li>Products</li>
       <li>Features</li>
       <li>Pricing</li>
