@@ -22,7 +22,11 @@ const PricingCard = ({pricing, cart, setCart}) => {
             <div className="card bg-base-100 shadow-sm">
   <div className="card-body">
 
-    <span className={`badge badge-xs text-white ${
+    <div className='flex items-center justify-between lg:gap-30 md:gap-30 sm:justify-start sm:gap-3'>
+      
+    <img src={image} alt="" className='w-[40px] h-[40px]'/>
+
+     <span className={`badge badge-sm text-white ${
     tag === "Popular"
       ? "bg-purple-400"
       : tag === "New"
@@ -30,7 +34,7 @@ const PricingCard = ({pricing, cart, setCart}) => {
       : "bg-yellow-400"
   }`}
 >{tag}</span>
-    <img src={image} alt="" className='w-[40px] h-[40px]'/>
+    </div>
         
     
     <div className="flex justify-between">
