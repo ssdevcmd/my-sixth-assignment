@@ -43,7 +43,7 @@ const Transparent = () => {
          {/* card-2 */}
             <div className="card bg-base-100 shadow-sm h-full flex flex-col">
   <div className="card-body bg-gradient-to-r from-[#4f39f6] to-[#9514fa] text-white rounded-lg flex flex-col flex-1">
-    <span className="badge badge-xs badge-warning absolute top-[-15px] left-30">Most Popular</span>
+    <span className="badge badge-sm badge-warning absolute top-[-15px] left-28">Most Popular</span>
     <div className="">
       <h2 className="text-2xl sm:text-3xl font-bold">Pro</h2>
       <p>Best for professionals</p>
