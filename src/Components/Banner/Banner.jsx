@@ -1,12 +1,14 @@
 import React from 'react';
 import { CiPlay1 } from "react-icons/ci";
+import BannerImg from '../../assets/banner.png';
+import GroupImg from '../../assets/Group 5.png'
 
 
 const Banner = () => {
     return (
         <div className='space-y-5'>
             <div className='bg-gradient-to-r from-[#b1b2b5FF] to-[#e1e7ffFF] flex gap-2 rounded-3xl mt-12 sm:mt-16 lg:mt-24 my-4 sm:my-6 py-2 sm:py-3 px-3 sm:px-4 w-fit items-center mx-auto sm:mx-0'>
-             <img src="/src/assets/Group 5.png" alt="" className='w-5 h-5 ml-4' />   
+             <img src={GroupImg} alt="" className='w-5 h-5 ml-4' />   
             <h4 className='font-semibold text-sm sm:text-base lg:text-lg text-purple-500'>New: AI-Powered Tools Available</h4>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 px-5 py-2 items-start">
@@ -24,7 +26,7 @@ const Banner = () => {
             </div>
                 </div>
                 <div>
-               <img src="/src/assets/banner.png" alt="" className='w-[500px] h-[500px] pb-10' />
+               <img src={BannerImg} alt="" className='w-[500px] h-[500px] pb-10' />
               </div>
             </div>
         </div>
